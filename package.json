@@ -1,0 +1,25 @@
+{
+  "name": "meu-perfil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioOta/Meu-perfil.git"
+  },
+  "keywords": ["nodejs","express"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioOta/Meu-perfil/issues"
+  },
+  "homepage": "https://github.com/CaioOta/Meu-perfil#readme",
+  "devDependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
