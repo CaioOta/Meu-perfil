@@ -8,14 +8,19 @@
   </head>
   <body>
     <header>
-      <h1>Desenvolvedor Web Junior</h1>
-      <img
-        src="assets/img/foto.jpg"
-        width="150px"
-        height="auto"
-        alt="Avatar do Caio"
-      />
-      <p>Caio Ryou Ota, 26 anos</p>
+      <div>
+        <h1>Desenvolvedor Web Junior</h1>
+        <img
+          src="https://thumbs.dreamstime.com/z/cartoon-monster-face-vector-halloween-orange-cool-monster-avatar-wide-smile-cartoon-funny-goblin-troll-prints-design-t-97163141.jpg"
+          width="150px"
+          height="auto"
+          alt="Avatar do Caio"
+        />
+        <p>
+          Caio Ryou Ota, 26 anos, iniciando minha carreira com a stack
+          <abbr title="SQL, Express, ReactJS, NodeJS">SERN</abbr>
+        </p>
+      </div>
       <nav>
         <a
           href="https://wa.me/+5518991153992?text=Ol%C3%A1%2C%20acabei%20de%20ver%20seu%20portifolio%21."
@@ -106,15 +111,186 @@
     </header>
 
     <main>
-      HABILIDADES
+      <h2>HABILIDADES</h2>
+      <p>Saca só como sou habilidoso!</p>
       <section>
-        HARD SKILLS
-        <article>LINGUAGENS / FRAMEWORKS</article>
-        <article>CURSOS</article>
-        <article>IDIOMAS</article>
+        <h3>HARD SKILLS</h3>
+        <article>
+          <img
+            src="https://riccardoslanzi.com/media/16/introduzione-git.png"
+            alt="Git"
+            width="250"
+            height="auto"
+          />
+          <h4>git e gitFlow</h4>
+          <p>
+            Estou familiarizado com git e prometo que não vou fazer deploy de
+            sexta.
+          </p>
+        </article>
+        <article>
+          <img
+            src="https://storage.googleapis.com/static.meupc.net/wp/1/2021/04/td_html.jpg"
+            alt="HTML"
+            width="250"
+            height="auto"
+          />
+          <h4>HTML5</h4>
+          <p>Meu HTML é semântico pacas.</p>
+        </article>
+        <article>
+          <img
+            src="https://www.brunodulcetti.com/static/fcd30c8735ee8c71261d0e79b7ee5c47/86e90/css.jpg"
+            alt="CSS"
+            width="250"
+            height="auto"
+          />
+          <h4>CSS</h4>
+          <p>Meu CSS aplica um estilo muito estiloso.</p>
+        </article>
+        <article>
+          <img
+            src="https://files.tecnoblog.net/wp-content/uploads/2021/02/o_que_e_node_js-e1612977170388-700x393.jpg"
+            alt="JS"
+            width="250"
+            height="auto"
+          />
+          <h4>JS</h4>
+          <p>
+            Além de JS Vanilla, também já sei trabalhar com NodeJS e ReactJS.
+          </p>
+        </article>
       </section>
       <section>
-        SOFT SKILLS
+        <h3>OFERTA IMPERDÍVEL!</h3>
+        <p>
+          Solicite um orçamento e ganhe até 1% de desconto - oferta por tempo
+          limitado.
+        </p>
+        <form action="/" method="get">
+          <fieldset>
+            <legend>Dados de Acesso</legend>
+            <label for="">Email*</label>
+            <input type="email" required name="email" id="email" />
+            <br />
+            <label for="">Senha:</label>
+            <input
+              type="password"
+              required
+              name="password"
+              id="Senha"
+              minlength="6"
+              maxlength="8"
+            />
+            <small>No mínimo 6 caracteres e no máximo de 8</small>
+            <!-- <big>esse e uma tag que foi descontinuada</big> -->
+            <br />
+          </fieldset>
+          <fieldset>
+            <legend>Dados de Pessoais</legend>
+
+            <label for="nome">Nome*</label>
+            <input type="text" required name="name" id="nome" />
+            <br />
+            <label for="phone">Telefone*</label>
+            <input type="tel" required name="phone" id="phone" />
+            <br />
+            <label for="site">Site:</label>
+            <input type="url" required name="site" id="site" />
+            <br />
+            <label for="nascimento">Dia e hora de nascimento</label>
+            <input
+              type="datetime-local"
+              required
+              name="nascimento"
+              id="nascimento"
+            />
+            <br />
+            <label for="datapreferida">Dia do ano que mais gosta:</label>
+            <input
+              type="date"
+              required
+              name="datapreferida"
+              id="datapreferida"
+            />
+            <br />
+
+            <label for="cor-preferida">Qual sua cor preferida?</label>
+            <input type="color" name="color" id="color-preferida" />
+            <br />
+            <label>Sexo:</label>
+            <input type="radio" name="gender" value="name" id="male" />
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Feminino</label>
+            <input type="radio" name="gender" value="other" id="other" />
+            <label for="other">Outro</label>
+            <input type="radio" name="gender" value="none" id="none" />
+            <label for="none">Prefiro não dizer</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Sobre a Oportunidade</legend>
+            <label for="salario">Salário</label>
+            <input
+              type="number"
+              name="pass"
+              id="salario"
+              step="2"
+              minlength="2"
+              maxlength="99999999"
+            />
+            <br />
+            <label for="nivel-de-stress-diario">Nivel de estresse diário</label>
+            <input
+              type="range"
+              name="nivel-de-stress-diario"
+              id="nivelDeStressDiario"
+              minlength="0"
+              maxlength="100"
+            />
+            <!-- <small>No mínimo 6 e no máximo 8 caracteres</small> -->
+            <!-- <big>Esse é uma tag big</big> -->
+
+            <label>Atuação da Vaga</label>
+            <select name="role" id="Atuação" required>
+              <option value="" disabled>SELECIONE UMA OPÇÃO</option>
+              <option value="back">Back End</option>
+              <option value="front">Front End</option>
+              <option value="fullstack">Full Stack</option>
+              <option value="devops">DevOps</option>
+            </select>
+            <br />
+            <label for="msg">Descrição da Oportunidade</label>
+            <br />
+            <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Imformaçoes Complemetares</legend>
+
+            <label for="entrada">Que horas vou ter que acordar?</label>
+            <input type="time" name="x" id="entrada" />
+            <br />
+            <label for="saida">Que horas começa o Happy Hour?</label>
+            <input type="time" name="y" id="saida" />
+            <br />
+            <input type="checkbox" name="option" id="option" required />
+            <label for="checkbox" name=" option" id="option" required
+              >Estou cinente que, mandando essa mensagem, estarei contratando
+              Caio</label
+            >
+          </fieldset>
+
+          <input type="hidden" name="token-de-autenticaçao" />
+
+          <button type="reset" title="Limpar">Limpar</button>
+          <button disabled>Garanta sua oferta VIP</button>
+          <button title="Garantir dev">Me garanta na sua empresa!</button>
+        </form>
+      </section>
+      <section>
+        <h3>SOFT SKILLS</h3>
         <article>
           <ul>
             <li>Agile</li>
@@ -126,13 +302,14 @@
           </ul>
         </article>
       </section>
-      <section>CTA - Call To Action (ENTRE EM CONTATO)</section>
     </main>
+
     <aside>
       EXPERIÊNCIA PROFISSIONAL
       <section>SECTION EXPERIÊNCIAS/PROJETOS > LISTA</section>
       <section>REFERÊNCIAS (RECOMENDAÇÕES)</section>
     </aside>
+
     <footer>CONTATOS E LINKS EXTERNOS</footer>
   </body>
 </html>
